@@ -1,0 +1,137 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #f0eef1;
+	font-size: 12px;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 10%;
+	height: 8vh;
+	background-color: #fffbfb;
+}
+h1 {
+	font-size: 2rem;
+}
+.log-in {
+	padding: 10px;
+	font-size: 1rem;
+	border: none;
+	border-radius: 10px;
+}
+.log-in:hover {
+	cursor: pointer;
+}
+
+.main {
+	display: grid;
+	justify-content: center;
+	grid-gap: 50px;
+	padding: 20px 100px;
+	grid-template-columns: repeat(auto-fit, 400px);
+	/* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
+	/* grid-template-rows: 200px 200px; */
+}
+.xd {
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#show-box {
+	padding: 30px;
+	font-weight: bold;
+	font-size: 1.4rem;
+	border: none;
+}
+#show-box:hover {
+	cursor: pointer;
+}
+.book {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 300px;
+	background-color: #fffbfb;
+	border-radius: 20px;
+	box-shadow: 0px 0px 3px black;
+}
+.book button {
+	width: 80%;
+	font-size: 1rem;
+	padding: 10px;
+}
+.active-button {
+	background-color: lime;
+}
+.not-active-button {
+	background-color: tomato;
+}
+.book p {
+	font-size: 1.5rem;
+}
+
+.inputs {
+	position: absolute;
+	top: 400px;
+	left: 50%;
+	transform: translate(-50%);
+	font-size: 1.5rem;
+}
+.inputs-box {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 400px;
+	width: 400px;
+	background-color: #333;
+	color: white;
+	border-radius: 20px;
+}
+.inactive {
+	display: none;
+}
+
+input {
+	width: 80%;
+	font-size: 1rem;
+	padding: 5px;
+	background-color: #f0eef1;
+}
+.checkbox {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 1rem;
+	gap: 10px;
+}
+#checkbox {
+	width: 20px;
+	height: 20px;
+}
+#cancel,
+#submit {
+	margin: auto;
+	height: 50px;
+	width: 150px;
+	border-radius: 10px;
+	background-color: #f0eef1;
+	text-align: center;
+}
+.bigger {
+	height: 454px;
+}
+#invalid-input {
+	color: red;
+}
+
