@@ -1,0 +1,89 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto Mono';
+	display: flex;
+	height: 100vh;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: #333;
+}
+
+h1 {
+	padding-top: 80px;
+	font-size: 48px;
+	line-height: 100%;
+	letter-spacing: 5px;
+	text-align: center;
+	font-weight: normal;
+	color: white;
+	text-shadow: 0 0 10px rgb(198, 255, 195), 0 0 20px rgb(157, 255, 152),
+		0 0 50px rgb(124, 255, 117), 0 0 80px rgb(71, 255, 61),
+		0 0 100px rgb(13, 255, 0);
+}
+
+.main {
+	display: flex;
+	justify-content: center;
+	gap: 50px;
+}
+.menu {
+	margin: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+#input-color {
+	width: 100px;
+	height: 100px;
+	appearance: none;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+#input-color::-webkit-color-swatch {
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+.workspace {
+	margin: 0;
+	padding: 0;
+	width: 602px;
+	height: 602px;
+	background-color: #fff;
+	font-size: 0px;
+	border: 1px solid black;
+}
+
+.mini-box {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+}
+
+button {
+	width: 100px;
+	height: 50px;
+	background-color: #fff;
+	box-shadow: 5px 5px 0 #0ddf00;
+	border: none;
+	cursor: pointer;
+	transition: transform 0.3s;
+}
+
+button:hover {
+	transform: scale(1.1);
+}
+
+.active {
+	background-color: #0ddf00;
+	border: none;
+	box-shadow: 5px 5px 0 #fff;
+}
